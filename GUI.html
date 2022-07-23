@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VAPAY</title>
+        <link rel="stylesheet" href="gui.css">
+
+      <!-- <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">--> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">VAPAY<span>RIDE.</span></a>
+
+    <form action="">
+        <input type="search" id="search-bar">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div id="theme-toggler" class="fas fa-moon"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+
+    <div class="user">
+        <img src="images/tour two.jpg" alt="">
+        <h3>Antonio Untamed</h3>
+    </div>
+
+    <div class="links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#featured">Featured</a>
+        <a href="#deal">Deal</a>
+        <a href="#review">Review</a>
+    </div>
+
+    <div id="close" class="fas fa-times"></div>
+
+</nav>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>Its offer time</span>
+        <h3>Tour the world at your own pace and rate </h3>
+        <a href="#" class="btn">BOOK A TRIP</a>
+    </div>
+
+    <div class="image">
+        <img src="images/travel1.avif">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <h1 class="heading"> Tour by <span>category</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/travel2.avif" alt="">
+            <div class="content">
+                <span>upto 50% off</span>
+               <span><h3>across the country</h3></span> 
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="form">
+            <div class="container">
+                <div class="col_md_12">
+                  <h3>Traveling Price Chart</h3>
+                  <div class="Chart">
+                    <table class="">
+                      <tr>
+                        <th>Distance Covered (Kms)</th>
+                        <th>Amount in (KSh.)</th>
+                        <th></th>
+                      </tr>
+            
+                      <tr>
+                        <td><h6>1 - 10</h6></td>
+                        <td><h6>100</h6></td>
+                      </tr>
+                      <tr>
+                        <td><h6>11 - 50</h6></td>
+                        <td><h6>300</h6></td>
+                      </tr>
+                      <tr>
+                        <td><h6>51 - 100</h6></td>
+                        <td><h6>500</h6></td>
+                      </tr>
+                      <tr>
+                        <td><h6>101 - 200</h6></td>
+                        <td><h6>1000</h6></td>
+                      </tr>
+                      <tr>
+                        <td><h6>201 - 300</h6></td>
+                        <td><h6>1200</h6></td>
+                      </tr>
+                      <tr>
+                        <td><h6>301 - 400</h6></td>
+                        <td><h6>1500</h6></td>
+                      </tr>
+                      <tr>
+                        <td><h6>Above 401</h6></td>
+                        <td><h6>Not applicable</h6></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+            <hr>
+            
+    <div class="col_md_12">
+        <h3>Travellers Calculator</h3>
+        <div class="calc">
+          <div class="persons">
+            <div class="personsLabel">
+              <label for="persons"><h5>Enter the Number of People:</h5></label>
+            </div>
+            <br>
+            <div class="personsInput">
+              <input type="text" id="personsTravelling" />
+            </div>
+          </div>
+  <hr>
+          <div class="distance">
+            <div class="distanceLabel">
+              <label for="distance">
+                <h5>Enter The distance you wish to cover:</h5></label
+              >
+            </div>
+            <br>
+            <div class="distanceInput">
+              <input type="text" id="distanceCovered" />
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="result">
+          <button onclick="result()" id="amountButton">
+            Total Amount Payable
+          </button>
+          <br>
+          <input type="text" id="amountInput" />
+        </div>
+      </div>
+    </div>
+
+        </div>
+        <div class="box">
+            <img src="images/travel3.avif" alt="">
+            <div class="content">
+                <span>upto 50% off</span>
+                <h3>short distances("UBER")</h3>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> latest <span>trips</span> </h1>
+
+<div class="swiper-container product-slider gap">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+              
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/travel4.avif" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>party monsters</h3>
+                    <div class="price">$15.99<span>$18.99</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/tour 5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>Family's outing</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/tour 6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>CHAMA's</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/tour 7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>Travelling to shagz?</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/travel3.avif" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>Town Services</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<div class="swiper-container product-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/travel3.avif" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>Maasai Mara</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/travel4.avif" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>Schneiders</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/travel2.avif" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>TRAVEL for Worldcup</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p-9.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>celebrations</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/travel1.avif" alt="">
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>( 250 reviews )</span>
+                    </div>
+                    <h3>Party time</h3>
+                    <div class="price">$15.99 <span>$18.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> products </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/travel3.avif" class="small-image-1" alt="">
+                    <img src="images/travel2.avif" class="small-image-1" alt="">
+                    <img src="images/travel1.avif" class="small-image-1" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/travel4.avif" class="big-image-1" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Get-Together</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 250 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quasi nesciunt, error fuga facilis autem rerum cumque animi rem natus.</p>
+                <div class="price">$15.99 <span>$18.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/travel2.avif" class="small-image-2" alt="">
+                    <img src="images/travel3.avif" class="small-image-2" alt="">
+                    <img src="images/travel4.avif" class="small-image-2" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/travel1.avif" class="big-image-2" alt="">
+                </div>
+            </div>
+            <div class="content">
+        <h3>Vacation</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 250 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quasi nesciunt, error fuga facilis autem rerum cumque animi rem natus.</p>
+                <div class="price">$15.99 <span>$18.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="images/travel1.avif" class="small-image-3" alt="">
+                    <img src="images/travel2.avif" class="small-image-3" alt="">
+                    <img src="images/travel4.avif" class="small-image-3" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="images/travel4.avif" class="big-image-3" alt="">
+                </div>
+            </div>
+            <div class="content">
+            <h3>Team building</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>( 250 reviews )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quasi nesciunt, error fuga facilis autem rerum cumque animi rem natus.</p>
+                <div class="price">$15.99 <span>$18.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+    <h1 class="heading"> special <span>deal</span> </h1>
+
+    <div class="row">
+
+        <div class="content">
+            <span class="discount">upto 50% off</span>
+            <h3 class="text">deal of the day</h3>
+            <div class="count-down">
+                <div class="box">
+                    <h3 id="days">00</h3>
+                    <span>days</span>
+                </div>
+                <div class="box">
+                    <h3 id="hours">00</h3>
+                    <span>hours</span>
+                </div>
+                <div class="box">
+                    <h3 id="minutes">00</h3>
+                    <span>minutes</span>
+                </div>
+                <div class="box">
+                    <h3 id="seconds">00</h3>
+                    <span>seconds</span>
+                </div>
+            </div>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="image">
+            <img src="images/travel1.avif" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customers <span>review</span> </h1>
+
+<div class="swiper-container review-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/travel3.avif" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/travel2.avif" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/travel1.avif" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil aut praesentium qui non, magnam perspiciatis commodi fugit cumque quos, deserunt quidem esse fuga facilis exercitationem, dolorum itaque corrupti tempore.</p>
+                <div class="user">
+                    <img src="images/travel4.avif" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+<div class="footer-container">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">products</a>
+            <a href="#">featured</a>
+            <a href="#">deal</a>
+            <a href="#">review</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my favorite</a>
+            <a href="#">my order</a>
+            <a href="#">my cart</a>
+        </div>
+
+        <div class="box">
+            <h3>donwload links</h3>
+            <a href="#">windows store</a>
+            <a href="#">app store</a>
+            <a href="#">google store</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <a href="#">+254-796-711-327</a>
+            <a href="https://www.antoniokinyua4@gmail.com">antoniokinyu4@gmail.com</a>
+            <a href="#">Nairobi, Kenya - 400104</a>
+            <img src="images/travel2.avif" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. web designer </span>  all rights reserved </div>
+
+</div>
+
+</section>
+        <script src="gui.js"></script>
+    </body>
+</html>
